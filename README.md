@@ -30,3 +30,11 @@ Votes are stored in the browser only. To collect votes across devices, add a sma
 ## Optional: QR code
 
 If your flyer’s QR code should point here, host this app at a URL (e.g. GitHub Pages, Netlify, or your club’s site) and set the QR code target to that URL.
+
+## Admin area (team only)
+
+- **URL:** `admin.html` (e.g. https://rickleyard.github.io/burger-battle-by-the-bay/admin.html)
+- **Password:** Set in `js/admin.js` — change `ADMIN_PASSWORD` to your own (default: `burgerbattle2026`).
+- **What it does:** After logging in, you get links to the three Google Forms and fields to paste each form’s **response sheet** URL. Once you paste a sheet URL, “Open sheet” takes you straight to that spreadsheet to view sign-ups. Sheet URLs are saved in the browser (localStorage).
+- **Getting sheet URLs:** In each form → Responses tab → Link to Sheets (green icon) → open the spreadsheet and copy its URL from the browser.
+- **Optional – live tables:** To show sign-up counts or rows on the admin page (instead of opening the sheet), you can add a Google Apps Script to each response sheet that returns JSON; the admin page can then fetch and display that data. Ask if you want step-by-step for that.

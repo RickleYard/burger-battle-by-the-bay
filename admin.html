@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin · Burger Battle By The Bay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-page">
+  <div id="admin-login" class="admin-login">
+    <div class="admin-login-box">
+      <h1>Admin</h1>
+      <p class="admin-login-hint">Enter the admin password to view sign-ups and forms.</p>
+      <form id="login-form">
+        <input type="password" id="admin-password" placeholder="Password" autocomplete="off" class="admin-input" />
+        <button type="submit" class="btn btn-primary">Enter</button>
+      </form>
+      <p id="login-error" class="admin-error" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div id="admin-dashboard" class="admin-dashboard" hidden>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">← Burger Battle</a>
+        <nav class="nav">
+          <a href="index.html">Public site</a>
+          <span class="admin-badge">Admin</span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <div class="container">
+        <h1>Burger Battle · Team Admin</h1>
+        <p class="admin-lead">Track sign-ups and form responses. Connect your Google Form response sheets below.</p>
+
+        <section class="admin-section">
+          <h2>Professional team sign-ups</h2>
+          <p>Form: <a href="https://docs.google.com/forms/d/1wHR6fgknnmfIK23rvM8jfVXEKL5nvNU6vwp79XCb2eE/edit" target="_blank" rel="noopener noreferrer">Professional Team Registration</a></p>
+          <div class="admin-sheet-link">
+            <label for="sheet-pro">Response sheet URL (from Form → Responses → Link to Sheets):</label>
+            <input type="url" id="sheet-pro" placeholder="https://docs.google.com/spreadsheets/d/..." class="admin-input admin-input-wide" />
+            <a id="open-pro" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Open sheet</a>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h2>Amateur team sign-ups</h2>
+          <p>Form: <a href="https://docs.google.com/forms/d/1HWEdPVIGnyg4vWNtHBuj7XRKFZsxokv6_wJxiRafBA4/edit" target="_blank" rel="noopener noreferrer">Amateur Team Registration</a></p>
+          <div class="admin-sheet-link">
+            <label for="sheet-ama">Response sheet URL:</label>
+            <input type="url" id="sheet-ama" placeholder="https://docs.google.com/spreadsheets/d/..." class="admin-input admin-input-wide" />
+            <a id="open-ama" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Open sheet</a>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h2>Sponsor sign-ups</h2>
+          <p>Form: <a href="https://docs.google.com/forms/d/12FipB_e5BQDmTIiV5VyOtRXkEvr0hxY7bkmnqjS5lEk/edit" target="_blank" rel="noopener noreferrer">Sponsor Form</a></p>
+          <div class="admin-sheet-link">
+            <label for="sheet-spon">Response sheet URL:</label>
+            <input type="url" id="sheet-spon" placeholder="https://docs.google.com/spreadsheets/d/..." class="admin-input admin-input-wide" />
+            <a id="open-spon" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Open sheet</a>
+          </div>
+        </section>
+
+        <section class="admin-section admin-section-help">
+          <h2>How to get the response sheet URL</h2>
+          <ol class="admin-steps">
+            <li>Open the form in Google Forms (use the form links above).</li>
+            <li>Go to the <strong>Responses</strong> tab.</li>
+            <li>Click the green <strong>Sheets</strong> icon (Link to Sheets) → “Create a new spreadsheet” or “Select existing spreadsheet”.</li>
+            <li>Open that spreadsheet and copy the URL from the browser (e.g. <code>https://docs.google.com/spreadsheets/d/ABC123.../edit</code>).</li>
+            <li>Paste it into the box above and click “Open sheet” to jump to it anytime.</li>
+          </ol>
+          <p>Your sheet URLs are saved in this browser only (localStorage).</p>
+        </section>
+
+        <p class="admin-logout"><button type="button" id="admin-logout" class="btn btn-secondary">Log out</button></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
