@@ -127,54 +127,44 @@ body {
   opacity: 0.8;
 }
 
-.hero-event-logo {
-  max-width: 110px;
+.hero-rotary-emblem {
+  display: block;
+  width: 80px;
   height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+  margin: 0 auto 0.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
 }
 
-.hero-top-logos {
+.hero-sponsored-by {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1rem 1.5rem;
-  margin-bottom: 0.75rem;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
 }
 
-.hero-sponsor-logo {
-  height: 56px;
+.hero-sponsored-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.8);
+}
+
+.hero-butcher-logo {
+  height: 44px;
   width: auto;
-  max-width: 160px;
-  object-fit: contain;
-}
-
-.hero-sponsor-logo-rotary {
-  padding: 10px 14px;
-  background: #ffffff;
-  border-radius: 10px;
-  height: 72px;
-  box-sizing: content-box;
-}
-
-.hero-sponsor-logo-butcher {
-  height: 60px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   background: rgba(255,255,255,0.95);
   border-radius: 8px;
   box-sizing: content-box;
 }
 
 @media (min-width: 520px) {
-  .hero-event-logo {
-    max-width: 130px;
+  .hero-rotary-emblem {
+    width: 100px;
   }
-  .hero-sponsor-logo-rotary {
-    height: 84px;
-  }
-  .hero-sponsor-logo-butcher {
-    height: 64px;
+  .hero-butcher-logo {
+    height: 52px;
   }
 }
 
