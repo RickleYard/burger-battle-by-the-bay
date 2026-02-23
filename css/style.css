@@ -127,6 +127,66 @@ body {
   opacity: 0.8;
 }
 
+.hero-event-logo {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 0.5rem;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+}
+
+.hero-sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.hero-sponsor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hero-sponsor-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.8);
+}
+
+.hero-sponsor-logo {
+  height: 44px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.hero-sponsor-logo-rotary {
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 8px;
+  height: 40px;
+  box-sizing: content-box;
+}
+
+.hero-sponsor-logo-butcher {
+  height: 48px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+
+@media (min-width: 520px) {
+  .hero-event-logo {
+    max-width: 240px;
+  }
+}
+
 .hero-host {
   font-size: 0.9rem;
   text-transform: uppercase;
