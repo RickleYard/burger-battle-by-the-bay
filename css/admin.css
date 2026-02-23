@@ -96,6 +96,16 @@
   margin: 0 0 0.5rem;
 }
 
+.admin-btn-open {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.admin-form-link {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
 .admin-section p {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;
