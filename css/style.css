@@ -215,6 +215,17 @@ body {
   border: 2px solid rgba(255,255,255,0.5);
 }
 
+.btn-sponsor {
+  background: var(--gold);
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.btn-sponsor:hover {
+  background: var(--gold-light);
+  border-color: var(--white);
+}
+
 .btn-block {
   width: 100%;
   text-align: center;
